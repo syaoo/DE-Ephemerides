@@ -1,0 +1,50 @@
+October 31, 1997
+
+                ******  CDroms  ******
+
+The CD's containing DE200 and DE405 (unix and ascii) and also DE406 
+(unix only) are available from Willmann-Bell.  The price is about 
+$25 per disk.
+
+         Willmann-Bell, Inc.
+         PO Box 35025
+         Richmond, VA 23235
+         804-320-7016
+         804-272-5920 (Fax)
+
+         http://www.willbell.com
+
+There is an order form that calculates all costs to any country in the world
+on their web page (www.willbell.com).  On the home page there is an icon for
+this. The order form activates security for credit card transactions.  If one
+does not want to order over the web, one can print the order form and fax or
+mail it to them.
+
+I now have a supply of the ascii version of DE406.  I can lend these out to
+those who need the full extended ephemeris and who can not use the unix 
+version.
+
+Myles Standish
+
+   E M Standish: ems@smyles.jpl.nasa.gov  (remember to include postal address)
+
+
+   *****  NOTE:  2 corrections to the software on the CDrom  *****
+
+
+1)  (on both CDroms) in "testeph", line 142:
+
+        DEL=DABS(R(NCOORD)-XI)/(DABS(R(NCOORD))+DABS(XI))
+
+    should be replaced by:
+
+        DEL=DABS(R(NCOORD)-XI)
+        if(ntarg .eq. 15 .and. ncoord .eq. 3)
+       * del=del/(0.23d0*(et-2451545.d0))
+
+
+2) (on the DE406 CDrom version only) in "asc2eph.f", line 268:  
+
+   "3D26.18"  should be replaced by:  "3D23.15"
+
+                 ************************
